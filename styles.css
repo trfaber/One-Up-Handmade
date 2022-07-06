@@ -1,12 +1,18 @@
+/*Font settings*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(12px + 1vw);
+}    
 /*Nav Panel*/
     nav {
         display: flex;
     }
 
+    /*Logo Image*/
     nav>img {
-        width: 104px;
+        width: 120px;
         border-radius: 50%;
-        padding: 8px;
+        padding: 8px 0px;
     }
 
     /*Page Links*/
@@ -14,12 +20,11 @@
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        padding: 0px;
+        padding: 0px 8px;
     }
-        
+        /*Link formating*/
         li a {
                 color: black;
-                f
                 text-decoration: none;
                 border-top: 8px solid transparent;
                 padding: 8px;
@@ -37,12 +42,20 @@
 
     /*Search Bar*/
     form{
-        padding: 16px;
         position: absolute;
+        padding: 16px;
         right: 0px;
         height: 24px;
     }
-            
+
+/*Banner*/
+.banner {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 300px;
+}
+
 /*Table*/
     table, td {
         border: 0px;
