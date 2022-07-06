@@ -1,0 +1,63 @@
+/*Nav Panel*/
+    nav {
+        display: flex;
+    }
+
+    nav>img {
+        width: 104px;
+        border-radius: 50%;
+        padding: 8px;
+    }
+
+    /*Page Links*/
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+        
+        li a {
+                color: black;
+                f
+                text-decoration: none;
+                border-top: 8px solid transparent;
+                padding: 8px;
+                gap: 8px;
+            }
+
+        li a:hover {
+                cursor:pointer;
+                border-top: 8px solid #e2b619;
+            }
+    
+        li a:active {
+                background-color: #e2b619;
+            }
+
+    /*Search Bar*/
+    form{
+        padding: 16px;
+        position: absolute;
+        right: 0px;
+        height: 24px;
+    }
+            
+/*Table*/
+    table, td {
+        border: 0px;
+    }
+
+    table.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+/*Copyright*/
+    p.copyright {
+        text-align: right;
+    }
