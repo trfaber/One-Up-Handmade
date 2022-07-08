@@ -3,13 +3,17 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: calc(12px + 1vw);
 }    
+
 /*Nav Panel*/
     nav {
         display: flex;
+        position: sticky;
+        top: 0px;
+        padding: 8px;
     }
 
     /*Logo Image*/
-    nav>img {
+    .logo {
         width: 120px;
         border-radius: 50%;
         padding: 8px 0px;
@@ -22,6 +26,7 @@ body{
         flex-direction: row;
         padding: 0px 8px;
     }
+
         /*Link formating*/
         li a {
                 color: black;
@@ -30,24 +35,45 @@ body{
                 padding: 8px;
                 gap: 8px;
             }
-
         li a:hover {
                 cursor:pointer;
                 border-top: 8px solid #e2b619;
             }
-    
         li a:active {
                 background-color: #e2b619;
             }
 
     /*Search Bar*/
-    form{
+    form {
         position: absolute;
-        padding: 16px;
-        right: 0px;
-        height: 24px;
+        padding: 0px 16px;
+        right: 40px;
+    }
+    input.button:hover {
+        cursor:pointer;
     }
 
+    /*Cart*/
+    .cart {
+        position: absolute;
+        top: 16px;
+        right: 0px;
+        width: 24px;
+        height: 24px;
+        padding: 8px;
+        background: url(cart.png) no-repeat;
+    }
+    .cart:hover {
+        position: absolute;
+        top: 16px;
+        right: 0px;
+        width: 24px;
+        height: 24px;
+        padding: 8px;
+        background: url(cart\ hover.png) no-repeat;
+        cursor:pointer;
+    }
+    
 /*Banner*/
 .banner {
     display: block;
@@ -57,18 +83,37 @@ body{
 }
 
 /*Table*/
-    table, td {
+table, td {
         border: 0px;
     }
-
-    table.center {
+table.center {
         margin-left: auto;
         margin-right: auto;
     }
-
     th, td {
         padding: 8px;
     }
+    td>img {
+            width: 30vw;
+    }
+
+/*About*/
+h2 {
+    text-align: center;
+}
+
+.about {
+    display: block;
+    align-content: left;
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: 400px;
+}
+
+.tiktok-embed {
+    z-index: -1;
+    background-color: transparent;
+}
 
 /*Copyright*/
     p.copyright {
