@@ -3,72 +3,126 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: calc(12px + 1vw);
 }    
+
 /*Nav Panel*/
-    nav {
-        display: flex;
-    }
-
     /*Logo Image*/
-    nav>img {
-        width: 120px;
-        border-radius: 50%;
-        padding: 8px 0px;
-    }
-
-    /*Page Links*/
-    ul {
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        padding: 0px 8px;
-    }
-        /*Link formating*/
-        li a {
-                color: black;
-                text-decoration: none;
-                border-top: 8px solid transparent;
+            .logo {
+                width: 120px;
+                position: fixed;
+                top: 8px;
+                left: 16px;
+                border-radius: 50%;
                 padding: 8px;
-                gap: 8px;
+                z-index: 99;
             }
 
-        li a:hover {
+            div.link {
+                width: 100%;
+                position: fixed;
+                top: 0px;
+                background-color: #FEFEFE;
+                z-index: 98;
+            }
+            
+            /*Page Links*/
+            ul {
+                list-style-type: none;
+                display: flex;
+                align-content: row;
+                padding-left: 150px;
+            }
+                /*Link formating*/
+                li a {
+                        color: black;
+                        text-decoration: none;
+                        border-top: 8px solid transparent;
+                        padding: 8px;
+                        gap: 8px;
+                    }
+                li a:hover {
+                        cursor:pointer;
+                        border-top: 8px solid #e2b619;
+                    }
+                
+             /*Search Bar*/
+            form {
+                display: flex;
+                position: absolute;
+                right: 80px;
+                top: 18px;
+                background-color: gray;
+            }
+            input.button:hover {
                 cursor:pointer;
-                border-top: 8px solid #e2b619;
+            }
+        
+            /*Cart*/
+            .cart {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                width: 24px;
+                height: 24px;
+                padding: 8px;
+                background: url(cart.png) no-repeat;
+            }
+            .cart:hover {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                width: 24px;
+                height: 24px;
+                padding: 8px;
+                background: url(cart\ hover.png) no-repeat;
+                cursor:pointer;
             }
     
-        li a:active {
-                background-color: #e2b619;
-            }
-
-    /*Search Bar*/
-    form{
-        position: absolute;
-        padding: 16px;
-        right: 0px;
-        height: 24px;
-    }
-
 /*Banner*/
 .banner {
+    padding-top: 116px;
     display: block;
     margin: auto;
-    max-width: 100%;
-    max-height: 300px;
+    width: 99%;
 }
 
 /*Table*/
-    table, td {
+table, td {
         border: 0px;
     }
-
-    table.center {
+table.center {
         margin-left: auto;
         margin-right: auto;
     }
-
     th, td {
         padding: 8px;
     }
+    td>img {
+            width: 30vw;
+    }
+
+/*About*/
+div.about {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    max-width: 80%;
+}
+    h2 {
+        text-align: center;
+        margin: .5em;
+    }
+    img.about {
+        float: left;
+        padding-right: 16px;
+        max-width: 25%;
+    }
+    p {
+        margin: 1em;
+    }
+
+.tiktok-embed {
+    z-index: -1;
+}
 
 /*Copyright*/
     p.copyright {
