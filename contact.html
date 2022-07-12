@@ -20,19 +20,20 @@
     <body>
        <!-- Shop Logo -->
         <img class="logo" src="logo.jpg" alt="One Up Handmade Logo">
-            <div class="link">
+            <div class="top-nav">
             <!--Nav Links-->
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class="top-nav">
+                    <li class="top-nav"><a href="index.html">Home</a></li>
+                    <li class="top-nav"><a href="#shop">Shop</a></li>
+                    <li class="top-nav"><a href="about.html">About</a></li>
+                    <li class="top-nav"><a href="contact.html">Contact</a></li>
                 </ul>
-                <!--Search bar-->
-                <form>
-                    <input class="searchbar" type="search" placeholder="Find Cool Stuff" >
-                        <input class="button" type="submit" value="Search">
-                </form>
+                  <!--Search bar-->
+                <div class="wrapper">
+                    <input class="search" type="text" placeholder="Find Cool Stuff" >
+                   <!-- <img class="clear-icon" src="clear.png" alt="search"> -->
+                    <img class="search-icon" src="search.png" alt="search">
+                </div>
             <!--Shopping Cart-->
                 <div class="cart">   
                 </div>
@@ -41,11 +42,21 @@
      <!-- Contact -->
         Custom item email form to be added
     
-    <!-- Copyright section with date at bottom right of page -->
-        <p style="text-align:right"><small>
-            Copyright <time datetime="2022-06-28">Jun 28th, 2022</time>
-        </small></p>
-    
+    <!--Bottom Nav-->
+       <div class="bottom-nav">
+              
+            <ul class="bottom-nav">
+                        <li class="bottom-nav"><a href="index.html">Home</a></li>
+                        <li class="bottom-nav"><a href="#shop">Shop</a></li>
+                        <li class="bottom-nav"><a href="about.html">About</a></li>
+                        <li class="bottom-nav"><a href="contact.html">Contact</a></li>
+            </ul>
+        <!-- Copyright section with date at bottom right of page -->
+            <small><p class="copyright">
+                Webpage Designed by Taylor Faber
+            </p>
+        </small>
+        </div>
     </body>
 
 </html>

@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         
         <!--Title of Website-->
-        <title>One Up Handmade Shop</title>
+        <title>One Up Handmade</title>
     
         <!--Styles-->        
         <link href="styles.css" rel="stylesheet">
@@ -19,25 +19,29 @@
 
     <body>
         <!-- Shop Logo -->
+        <nav aria-label="Main">
         <img class="logo" src="logo.jpg" alt="One Up Handmade Logo">
-            <div class="link">
+            <div class="top-nav">
             <!--Nav Links-->
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class="top-nav">
+                    <li class="top-nav"><a href="index.html">Home</a></li>
+                    <li class="top-nav"><a href="#shop">Shop</a></li>
+                    <li class="top-nav"><a href="about.html">About</a></li>
+                    <li class="top-nav"><a href="contact.html">Contact</a></li>
                 </ul>
                 <!--Search bar-->
-                <form>
-                    <input class="searchbar" type="search" placeholder="Find Cool Stuff" >
-                        <input class="button" type="submit" value="Search">
-                </form>
+                <div class="wrapper">
+                    <input class="search" type="text" placeholder="Find Cool Stuff" >
+                   <!-- <img class="clear-icon" src="clear.png" alt="search"> -->
+                    <img class="search-icon" src="search.png" alt="search">
+                </div>
             <!--Shopping Cart-->
-                <div class="cart">   
+                <div class="cart" role="button" aria-label="Cart">   
                 </div>
             </div>
+        </nav>
         <br>
+        
     <!-- Logo Banner -->
         <img class="banner" src="banner.png" alt="Slow Fashion for littles in Fandoms you Love."> 
     
@@ -45,20 +49,32 @@
         <table class="center">
             <caption><h2>Featured Products</h2></caption>
             <tr>
-                <td><img src="https://goimagine.com/images/detailed/1156/1406231B-119D-421B-AEC1-443B78417827_org.jpeg"></td>
-                <td><img src="https://goimagine.com/images/detailed/1157/3794A9A5-D255-4ADA-877B-00C17AAE585D_org.jpeg"></td>
-                <td><img src="https://goimagine.com/images/detailed/1011/4ADC0E8C-7404-4F69-922F-EC48A6157ECF_org.jpeg"></td>
+                <td><img src="https://goimagine.com/images/detailed/1156/1406231B-119D-421B-AEC1-443B78417827_org.jpeg" alt="Product Name"></td>
+                <td><img src="https://goimagine.com/images/detailed/1157/3794A9A5-D255-4ADA-877B-00C17AAE585D_org.jpeg" alt="Product Name"></td>
+                <td><img src="https://goimagine.com/images/detailed/1011/4ADC0E8C-7404-4F69-922F-EC48A6157ECF_org.jpeg" alt="Product Name"></td>
             </tr>
         </table>
         
     <!--Shop-->
         <p id=shop>Shop here</p>
-        
-    <!-- Copyright section with date at bottom right of page -->
-        <p class="copyright"><small>
-            Copyright <time datetime="2022-06-28">Jun 28th, 2022</time>
-        </small></p>
-    
+
+    <!--Bottom Nav-->
+        <nav aria-label="footer">
+        <div class="bottom-nav"> 
+            <ul class="bottom-nav">
+                        <li class="bottom-nav"><a href="index.html">Home</a></li>
+                        <li class="bottom-nav"><a href="#shop">Shop</a></li>
+                        <li class="bottom-nav"><a href="about.html">About</a></li>
+                        <li class="bottom-nav"><a href="contact.html">Contact</a></li>
+            </ul>
+        <!-- Copyright section with date at bottom right of page -->
+            <p class="copyright">
+                <small>
+                Designed by Taylor Faber
+                </small>
+            </p>
+        </div>
+        </nav>
     </body>
 
 </html>
