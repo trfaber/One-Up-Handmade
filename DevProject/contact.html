@@ -11,7 +11,7 @@
         <title>One Up Handmade Shop</title>
     
         <!--Styles-->        
-        <link href="styles.css" rel="stylesheet">
+        <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -19,25 +19,28 @@
 
     <body>
        <!-- Shop Logo -->
-        <img class="logo" src="logo.jpg" alt="One Up Handmade Logo">
-            <div class="top-nav">
-            <!--Nav Links-->
-                <ul class="top-nav">
-                    <li class="top-nav"><a href="index.html">Home</a></li>
-                    <li class="top-nav"><a href="#shop">Shop</a></li>
-                    <li class="top-nav"><a href="about.html">About</a></li>
-                    <li class="top-nav"><a href="contact.html">Contact</a></li>
-                </ul>
-                  <!--Search bar-->
-                <div class="wrapper">
-                    <input class="search" type="text" placeholder="Find Cool Stuff" >
-                   <!-- <img class="clear-icon" src="clear.png" alt="search"> -->
-                    <img class="search-icon" src="search.png" alt="search">
+            <nav aria-label="Main">
+                <img class="logo" src="./resources/images/logo.jpg" alt="One Up Handmade Logo">
+                
+                <div class="top-nav">
+                    <!--Nav Links-->
+                    <ul class="top-nav">
+                        <li class="top-nav"><a href="index.html">Home</a></li>
+                        <li class="top-nav"><a href="index.html#shop">Shop</a></li>
+                        <li class="top-nav"><a href="about.html">About</a></li>
+                        <li class="top-nav"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <!--Search bar-->
+                    <div class="wrapper">
+                        <input class="search" type="text" placeholder="Find Cool Stuff" >
+                        <!--<img class="clear-icon" src="./resources/images/clear.png" alt="search"> -->
+                        <img class="search-icon" src="./resources/images/search.png" alt="search">
+                    </div>
+                    <!--Shopping Cart-->
+                    <div class="cart" role="button" aria-label="Cart">    
+                    </div>
                 </div>
-            <!--Shopping Cart-->
-                <div class="cart">   
-                </div>
-            </div>
+            </nav>
         <br>
      <!-- Contact -->
         Custom item email form to be added

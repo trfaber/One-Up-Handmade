@@ -95,7 +95,7 @@ body{
                 width: 24px;
                 height: 24px;
                 padding: 8px;
-                background: url(cart.png) no-repeat;
+                background: url("../../resources/images/cart.png") no-repeat;
             }
             .cart:hover {
                 position: absolute;
@@ -104,7 +104,7 @@ body{
                 width: 24px;
                 height: 24px;
                 padding: 8px;
-                background: url(cart\ hover.png) no-repeat;
+                background: url("../../resources/images/carthover.png") no-repeat;
                 cursor:pointer;
             }
     
