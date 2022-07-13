@@ -9,6 +9,12 @@ h2 {
     color: #e2b619;
     text-shadow: 0.5px 0.5px 1px #9c801c;			
     border: 0px;
+    text-align: center;
+    margin-top: 1.15em;
+}
+
+hr {
+    border-color: #e2b619;
 }
 
 /*Nav Panel*/
@@ -139,10 +145,6 @@ table.center {
     }
 
 /*About*/
-h2 {
-        text-align: center;
-        margin-top: 1.15em;
-    }
 div.about {
     background: linear-gradient(45deg, 
         rgba(42, 99, 11, 0.75) 20%,
@@ -161,10 +163,45 @@ div.about {
         margin: 1.15em 1em 0.5em 0em;
         width: 34%;
         max-width: 375px;
+        overflow: auto;
+        /*center better eventually*/
     }
     
 .tiktok-embed {
     z-index: -1;
+}
+
+/*Contact*/
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #4dac19;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #ffffff99;
+}
+  
+input[type=submit] {
+    background-color: #4dac19;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #4dac19;
+}
+  
+.container {
+    border-radius: 5px;
+    background-color: #e2b619;
+    padding: 20px;
+    margin: 1em;
 }
 
 /*Lower Nav*/
