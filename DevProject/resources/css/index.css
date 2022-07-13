@@ -1,13 +1,21 @@
 /*Font settings*/
-body{
+body {
     font-family: 'Roboto', sans-serif;
     font-size: calc(12px + 1vw);
 }    
+
+h2 {
+    font-family: 'Handlee', cursive;
+    color: #e2b619;
+    text-shadow: 0.5px 0.5px 1px #9c801c;			
+    border: 0px;
+}
 
 /*Nav Panel*/
     /*Logo Image*/
             .logo {
                 width: 12.5%;
+                min-width: 95px;
                 max-width: 120px;
                 position: fixed;
                 top: 8px;
@@ -30,7 +38,8 @@ body{
                 list-style-type: none;
                 display: flex;
                 align-content: row;
-                padding-left: 15%; /*eventually add if or coding?*/
+                padding-left: 20%; 
+                /*eventually add if or coding for min/max ability*/
             }
                 /*Link formating*/
                 li.top-nav a {
@@ -85,6 +94,7 @@ body{
                     right: 10px;
                     width: 24px;
                     cursor: pointer;
+            /*eventually add better postioning for cart and search bar*/
             }
             
             /*Cart*/
@@ -117,11 +127,6 @@ body{
 }
 
 /*Table*/
-table, td {
-        color: #e2b619;
-        text-shadow: 0.5px 0.5px 1px #9c801c;			
-        border: 0px;
-    }
 table.center {
         margin-left: auto;
         margin-right: auto;
@@ -129,30 +134,35 @@ table.center {
     th, td {
         padding: 8px;
     }
-    td>img {
+    td > img {
             width: 30vw;
     }
 
 /*About*/
+h2 {
+        text-align: center;
+        margin-top: 1.15em;
+    }
 div.about {
+    background: linear-gradient(45deg, 
+        rgba(42, 99, 11, 0.75) 20%,
+        rgba(77,172,25,0.75) 55%,
+        rgba(163, 232, 51, 0.75) 90%);
+    border-radius: 16px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    padding: 16px;
-    max-width: 80%;
+    max-width: 85%;
+    padding: 0.5em 1em;
 }
-    h2 {
-        text-align: center;
-        margin: .5em;
-    }
     img.about {
         float: left;
-        padding-right: 16px;
-        max-width: 25%;
+        border-radius: 16px;
+        margin: 1.15em 1em 0.5em 0em;
+        width: 34%;
+        max-width: 375px;
     }
-    p {
-        margin: 1em;
-    }
-
+    
 .tiktok-embed {
     z-index: -1;
 }
