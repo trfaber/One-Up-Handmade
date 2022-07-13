@@ -172,7 +172,7 @@ div.about {
 }
 
 /*Contact*/
-input[type=text], input[type=email], textarea {
+form > input[type=text], input[type=email], textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #4dac19;
@@ -181,7 +181,7 @@ input[type=text], input[type=email], textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    background-color: #ffffff99;
+    background-color: #ffffff90;
 }
   
 input[type=submit] {
